@@ -8,6 +8,7 @@ export const GenderFilter = ({
     return (
       <select className="gender-filter"
         value={value}
+        onClick={e=>e.stopPropagation()}
         onChange={(e) => {
           onChange(e.target.value);
         }}
